@@ -1,34 +1,200 @@
 {
   "$schema": "http://json-schema.org/schema#",
   "$schemaVersion": "0.0.1",
-  "$id": "",
-  "title": "",
-  "description": "",
-  "modelTags": "",
-  "derivedFrom": "",
-  "license": "",
+  "$id": "https://example.com/schema/AgriFertilize",
+  "title": "AgriFertilize Schema",
+  "description": "Schema for AgriFertilize entity.",
   "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+  "properties": {
+    "id": {
+      "type": "string"
     },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    "type": {
+      "type": "string",
+      "enum": ["AgriFertilize"]
     },
-    {
+    "dateCreated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "dateModified": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "name": {
+      "type": "string"
+    },
+    "subtype": {
+      "type": "object",
       "properties": {
-        "type": {
-          "type": "string",
-          "enum": [
-            "EntityName"
-          ],
-          "description": "Property. It must be equal to EntityName."
-        }
+        "type": { "type": "string" },
+        "id": { "type": "number" },
+        "code": { "type": "string" },
+        "name": { "type": "string" },
+        "mmcm": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": { "type": "string" },
+              "id": { "type": "number" },
+              "subtype": {
+                "type": "object",
+                "properties": {
+                  "type": { "type": "string" },
+                  "id": { "type": "number" },
+                  "subtype": {
+                    "type": "object",
+                    "properties": {
+                      "type": { "type": "string" },
+                      "id": { "type": "number" },
+                      "name": { "type": "string" }
+                    }
+                  },
+                  "code": { "type": "number" },
+                  "name": { "type": "string" },
+                  "symbol": { "type": "string" }
+                }
+              },
+              "value": { "type": "number" }
+            }
+          }
+        },
+        "macm": { "type": "array", "items": { "type": "object" } },
+        "hecm": { "type": "array", "items": { "type": "object" } },
+        "micm": { "type": "array", "items": { "type": "object" } },
+        "accm": { "type": "array", "items": { "type": "object" } },
+        "aacm": { "type": "array", "items": { "type": "object" } },
+        "otcm": { "type": "array", "items": { "type": "object" } },
+        "comp": {
+          "type": "object",
+          "properties": {
+            "type": { "type": "string" },
+            "id": { "type": "number" },
+            "name": { "type": "string" },
+            "nif": { "type": "string" }
+          }
+        },
+        "manure": { "type": ["null", "string"] },
+        "material": {
+          "type": "object",
+          "properties": {
+            "type": { "type": "string" },
+            "id": { "type": "number" },
+            "name": { "type": "string" }
+          }
+        },
+        "matdet": { "type": ["null", "string"] },
+        "provider": { "type": "string" },
+        "nif": { "type": "string" },
+        "check": { "type": "number" },
+        "metadata": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": { "type": "string" },
+              "user": {
+                "type": "object",
+                "properties": {
+                  "type": { "type": "string" },
+                  "id": { "type": "string" },
+                  "loginname": { "type": "string" },
+                  "email": { "type": "string" },
+                  "name": { "type": "string" },
+                  "surname": { "type": "string" },
+                  "nif": { "type": "string" }
+                }
+              },
+              "date": { "type": "string", "format": "date-time" }
+            }
+          }
+        },
+        "reviewed": { "type": "string" }
+      }
+    },
+    "inidate": { "type": "string", "format": "date-time" },
+    "enddate": { "type": "string" },
+    "dose": { "type": "number" },
+    "measure": {
+      "type": "object",
+      "properties": {
+        "type": { "type": "string" },
+        "id": { "type": "string" },
+        "subtype": {
+          "type": "object",
+          "properties": {
+            "type": { "type": "string" },
+            "id": { "type": "string" },
+            "name": { "type": "string" }
+          }
+        },
+        "code": { "type": "number" },
+        "name": { "type": "string" },
+        "symbol": { "type": "string" },
+        "prior": { "type": "number" },
+        "detail": { "type": "string" }
+      }
+    },
+    "soup": { "type": "number" },
+    "msoup": {
+      "type": "object",
+      "properties": {
+        "type": { "type": "string" },
+        "id": { "type": "string" },
+        "subtype": {
+          "type": "object",
+          "properties": {
+            "type": { "type": "string" },
+            "id": { "type": "string" },
+            "name": { "type": "string" }
+          }
+        },
+        "code": { "type": "number" },
+        "name": { "type": "string" },
+        "symbol": { "type": "string" },
+        "prior": { "type": "number" },
+        "detail": { "type": "string" }
+      }
+    },
+    "r10": { "type": "string" },
+    "mud": { "type": "number" },
+    "bill": { "type": "string" },
+    "plan": { "type": ["null", "string"] },
+    "taf": {
+      "type": "object",
+      "properties": {
+        "type": { "type": "string" },
+        "id": { "type": "string" },
+        "name": { "type": "string" }
+      }
+    },
+    "maf": {
+      "type": "object",
+      "properties": {
+        "type": { "type": "string" },
+        "id": { "type": "string" },
+        "name": { "type": "string" }
+      }
+    },
+    "tmi": {
+      "type": "object",
+      "properties": {
+        "type": { "type": "string" },
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "acronym": { "type": "string" }
+      }
+    },
+    "tgp": { "type": "array", "items": { "type": "object" } },
+    "machine": { "type": "array", "items": { "type": "object" } },
+    "detail": { "type": "string" },
+    "idcp": {
+      "type": "array",
+      "items": {
+        "type": "string"
       }
     }
-  ],
-  "required": [
-    "id",
-    "type"
-  ]
+  },
+  "required": ["id", "type", "dateCreated", "dateModified"]
 }
