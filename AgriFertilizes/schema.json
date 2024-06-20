@@ -7,194 +7,183 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": "string"
+      "type": "string",
+      "description": "Unique identifier for the AgriFertilize entity."
     },
     "type": {
       "type": "string",
-      "enum": ["AgriFertilize"]
+      "enum": ["AgriFertilize"],
+      "description": "Type of the entity, which is AgriFertilize."
     },
     "dateCreated": {
       "type": "string",
-      "format": "date-time"
+      "format": "date-time",
+      "description": "The date and time when the entity was created."
     },
     "dateModified": {
       "type": "string",
-      "format": "date-time"
+      "format": "date-time",
+      "description": "The date and time when the entity was last modified."
     },
     "name": {
-      "type": "string"
+      "type": "string",
+      "description": "Name of the AgriFertilize entity."
     },
     "subtype": {
       "type": "object",
+      "description": "Subtype details of the AgriFertilize entity.",
       "properties": {
-        "type": { "type": "string" },
-        "id": { "type": "number" },
-        "code": { "type": "string" },
-        "name": { "type": "string" },
+        "type": { "type": "string", "description": "Type of the subtype." },
+        "id": { "type": "number", "description": "Identifier of the subtype." },
+        "code": { "type": "string", "description": "Code of the subtype." },
+        "name": { "type": "string", "description": "Name of the subtype." },
         "mmcm": {
           "type": "array",
+          "description": "Array of mmcm objects associated with the subtype.",
           "items": {
             "type": "object",
             "properties": {
-              "type": { "type": "string" },
-              "id": { "type": "number" },
+              "type": { "type": "string", "description": "Type of mmcm." },
+              "id": { "type": "number", "description": "Identifier of mmcm." },
               "subtype": {
                 "type": "object",
+                "description": "Subtype details of mmcm.",
                 "properties": {
-                  "type": { "type": "string" },
-                  "id": { "type": "number" },
+                  "type": { "type": "string", "description": "Type of the mmcm subtype." },
+                  "id": { "type": "number", "description": "Identifier of the mmcm subtype." },
                   "subtype": {
                     "type": "object",
+                    "description": "Nested subtype details of mmcm.",
                     "properties": {
-                      "type": { "type": "string" },
-                      "id": { "type": "number" },
-                      "name": { "type": "string" }
+                      "type": { "type": "string", "description": "Type of the nested mmcm subtype." },
+                      "id": { "type": "number", "description": "Identifier of the nested mmcm subtype." },
+                      "name": { "type": "string", "description": "Name of the nested mmcm subtype." }
                     }
                   },
-                  "code": { "type": "number" },
-                  "name": { "type": "string" },
-                  "symbol": { "type": "string" }
+                  "code": { "type": "number", "description": "Code of the mmcm subtype." },
+                  "name": { "type": "string", "description": "Name of the mmcm subtype." },
+                  "symbol": { "type": "string", "description": "Symbol of the mmcm subtype." }
                 }
               },
-              "value": { "type": "number" }
+              "value": { "type": "number", "description": "Value associated with mmcm." }
             }
           }
         },
-        "macm": { "type": "array", "items": { "type": "object" } },
-        "hecm": { "type": "array", "items": { "type": "object" } },
-        "micm": { "type": "array", "items": { "type": "object" } },
-        "accm": { "type": "array", "items": { "type": "object" } },
-        "aacm": { "type": "array", "items": { "type": "object" } },
-        "otcm": { "type": "array", "items": { "type": "object" } },
+        "macm": {
+          "type": "array",
+          "description": "Array of macm objects associated with the subtype.",
+          "items": { "type": "object" }
+        },
+        "hecm": {
+          "type": "array",
+          "description": "Array of hecm objects associated with the subtype.",
+          "items": { "type": "object" }
+        },
+        "micm": {
+          "type": "array",
+          "description": "Array of micm objects associated with the subtype.",
+          "items": { "type": "object" }
+        },
+        "accm": {
+          "type": "array",
+          "description": "Array of accm objects associated with the subtype.",
+          "items": { "type": "object" }
+        },
+        "aacm": {
+          "type": "array",
+          "description": "Array of aacm objects associated with the subtype.",
+          "items": { "type": "object" }
+        },
+        "otcm": {
+          "type": "array",
+          "description": "Array of otcm objects associated with the subtype.",
+          "items": { "type": "object" }
+        },
         "comp": {
           "type": "object",
+          "description": "Details of the company associated with the subtype.",
           "properties": {
-            "type": { "type": "string" },
-            "id": { "type": "number" },
-            "name": { "type": "string" },
-            "nif": { "type": "string" }
+            "type": { "type": "string", "description": "Type of the company." },
+            "id": { "type": "number", "description": "Identifier of the company." },
+            "name": { "type": "string", "description": "Name of the company." },
+            "nif": { "type": "string", "description": "NIF of the company." }
           }
         },
-        "manure": { "type": ["null", "string"] },
+        "manure": { "type": ["null", "string"], "description": "Manure details, if any." },
         "material": {
           "type": "object",
+          "description": "Material details associated with the subtype.",
           "properties": {
-            "type": { "type": "string" },
-            "id": { "type": "number" },
-            "name": { "type": "string" }
+            "type": { "type": "string", "description": "Type of the material." },
+            "id": { "type": "number", "description": "Identifier of the material." },
+            "name": { "type": "string", "description": "Name of the material." }
           }
         },
-        "matdet": { "type": ["null", "string"] },
-        "provider": { "type": "string" },
-        "nif": { "type": "string" },
-        "check": { "type": "number" },
+        "matdet": { "type": ["null", "string"], "description": "Material details, if any." },
+        "provider": { "type": "string", "description": "Provider of the subtype." },
+        "nif": { "type": "string", "description": "NIF of the provider." },
+        "check": { "type": "number", "description": "Check value associated with the subtype." },
         "metadata": {
           "type": "array",
+          "description": "Array of metadata objects associated with the subtype.",
           "items": {
             "type": "object",
             "properties": {
-              "type": { "type": "string" },
+              "type": { "type": "string", "description": "Type of metadata." },
               "user": {
                 "type": "object",
+                "description": "User details associated with the metadata.",
                 "properties": {
-                  "type": { "type": "string" },
-                  "id": { "type": "string" },
-                  "loginname": { "type": "string" },
-                  "email": { "type": "string" },
-                  "name": { "type": "string" },
-                  "surname": { "type": "string" },
-                  "nif": { "type": "string" }
+                  "type": { "type": "string", "description": "Type of the user." },
+                  "id": { "type": "string", "description": "Identifier of the user." },
+                  "loginname": { "type": "string", "description": "Login name of the user." },
+                  "email": { "type": "string", "description": "Email of the user." },
+                  "name": { "type": "string", "description": "Name of the user." },
+                  "surname": { "type": "string", "description": "Surname of the user." },
+                  "nif": { "type": "string", "description": "NIF of the user." }
                 }
               },
-              "date": { "type": "string", "format": "date-time" }
+              "date": { "type": "string", "format": "date-time", "description": "Date associated with the metadata." }
             }
           }
         },
-        "reviewed": { "type": "string" }
+        "reviewed": { "type": "string", "description": "Review status of the subtype." }
       }
     },
-    "inidate": { "type": "string", "format": "date-time" },
-    "enddate": { "type": "string" },
-    "dose": { "type": "number" },
+    "inidate": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Initial date associated with the AgriFertilize entity."
+    },
+    "enddate": {
+      "type": "string",
+      "description": "End date associated with the AgriFertilize entity."
+    },
+    "dose": {
+      "type": "number",
+      "description": "Dose associated with the AgriFertilize entity."
+    },
     "measure": {
       "type": "object",
+      "description": "Measure details associated with the AgriFertilize entity.",
       "properties": {
-        "type": { "type": "string" },
-        "id": { "type": "string" },
+        "type": { "type": "string", "description": "Type of the measure." },
+        "id": { "type": "string", "description": "Identifier of the measure." },
         "subtype": {
           "type": "object",
+          "description": "Subtype details of the measure.",
           "properties": {
-            "type": { "type": "string" },
-            "id": { "type": "string" },
-            "name": { "type": "string" }
+            "type": { "type": "string", "description": "Type of the measure subtype." },
+            "id": { "type": "string", "description": "Identifier of the measure subtype." },
+            "name": { "type": "string", "description": "Name of the measure subtype." }
           }
         },
-        "code": { "type": "number" },
-        "name": { "type": "string" },
-        "symbol": { "type": "string" },
-        "prior": { "type": "number" },
-        "detail": { "type": "string" }
-      }
-    },
-    "soup": { "type": "number" },
-    "msoup": {
-      "type": "object",
-      "properties": {
-        "type": { "type": "string" },
-        "id": { "type": "string" },
-        "subtype": {
-          "type": "object",
-          "properties": {
-            "type": { "type": "string" },
-            "id": { "type": "string" },
-            "name": { "type": "string" }
-          }
-        },
-        "code": { "type": "number" },
-        "name": { "type": "string" },
-        "symbol": { "type": "string" },
-        "prior": { "type": "number" },
-        "detail": { "type": "string" }
-      }
-    },
-    "r10": { "type": "string" },
-    "mud": { "type": "number" },
-    "bill": { "type": "string" },
-    "plan": { "type": ["null", "string"] },
-    "taf": {
-      "type": "object",
-      "properties": {
-        "type": { "type": "string" },
-        "id": { "type": "string" },
-        "name": { "type": "string" }
-      }
-    },
-    "maf": {
-      "type": "object",
-      "properties": {
-        "type": { "type": "string" },
-        "id": { "type": "string" },
-        "name": { "type": "string" }
-      }
-    },
-    "tmi": {
-      "type": "object",
-      "properties": {
-        "type": { "type": "string" },
-        "id": { "type": "string" },
-        "name": { "type": "string" },
-        "acronym": { "type": "string" }
-      }
-    },
-    "tgp": { "type": "array", "items": { "type": "object" } },
-    "machine": { "type": "array", "items": { "type": "object" } },
-    "detail": { "type": "string" },
-    "idcp": {
-      "type": "array",
-      "items": {
-        "type": "string"
+        "code": { "type": "number", "description": "Code of the measure." },
+        "name": { "type": "string", "description": "Name of the measure." },
+        "symbol": { "type": "string", "description": "Symbol of the measure." },
+        "prior": { "type": "number", "description": "Priority of the measure." },
+        "detail": { "type": "string", "description": "Details of the measure." }
       }
     }
-  },
-  "required": ["id", "type", "dateCreated", "dateModified"]
+  }
 }
