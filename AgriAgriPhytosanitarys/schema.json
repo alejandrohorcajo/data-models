@@ -5,6 +5,9 @@
   "title": "AgriPhytosanitary Schema",
   "description": "Schema for AgriPhytosanitary entity.",
   "type": "object",
+  "derivedFrom": "",
+  "license": "",
+  "modelTags": "",
   "properties": {
     "id": {
       "type": "string",
@@ -13,139 +16,139 @@
     "type": {
       "type": "string",
       "enum": ["AgriPhytosanitary"],
-      "description": "Type of the entity."
+      "description": "Property. NGSI Entity Type. It has to be AgriPhytosanitary."
     },
     "dateCreated": {
       "type": "string",
       "format": "date-time",
-      "description": "The date and time when the entity was created."
+      "description": "Property. The date and time when the entity was created."
     },
     "dateModified": {
       "type": "string",
       "format": "date-time",
-      "description": "The date and time when the entity was last modified."
+      "description": "Property. The date and time when the entity was last modified."
     },
     "name": {
       "type": "string",
-      "description": "Name of the entity."
+      "description": "Property. Name of the entity."
     },
     "subtype": {
       "type": "object",
-      "description": "Detailed information about the subtype of the phytosanitary product.",
+      "description": "Property. Detailed information about the subtype of the phytosanitary product.",
       "properties": {
         "type": {
           "type": "string",
-          "description": "Subtype classification."
+          "description": "Property. Subtype classification."
         },
         "id": {
           "type": "string",
-          "description": "Subtype identifier."
+          "description": "Property. Subtype identifier."
         },
         "idpdf": {
           "type": "string",
-          "description": "PDF identifier related to the subtype."
+          "description": "Property. PDF identifier related to the subtype."
         },
         "code": {
           "type": "string",
-          "description": "Code associated with the subtype."
+          "description": "Property. Code associated with the subtype."
         },
         "name": {
           "type": "string",
-          "description": "Name of the subtype."
+          "description": "Property. Name of the subtype."
         },
         "names": {
           "type": "array",
           "items": {
             "type": "string"
           },
-          "description": "Alternative names for the subtype."
+          "description": "Property. Alternative names for the subtype."
         },
         "idate": {
           "type": "string",
-          "description": "Initial date related to the subtype."
+          "description": "Property. Initial date related to the subtype."
         },
         "rdate": {
           "type": "string",
-          "description": "Registration date of the subtype."
+          "description": "Property. Registration date of the subtype."
         },
         "edate": {
           "type": "string",
-          "description": "Expiry date of the subtype."
+          "description": "Property. Expiry date of the subtype."
         },
         "cdate": {
           "type": "string",
-          "description": "Creation date of the subtype."
+          "description": "Property. Creation date of the subtype."
         },
         "ldate": {
           "type": "string",
-          "description": "Last modification date of the subtype."
+          "description": "Property. Last modification date of the subtype."
         },
         "mix": {
           "type": "number",
-          "description": "Mix ratio for the subtype."
+          "description": "Property. Mix ratio for the subtype."
         },
         "idtf": {
           "type": "array",
           "items": {
             "type": "number"
           },
-          "description": "Identifiers for transformation related to the subtype."
+          "description": "Property. Identifiers for transformation related to the subtype."
         },
         "comp": {
           "type": "object",
-          "description": "Composition details of the subtype.",
+          "description": "Property. Composition details of the subtype.",
           "properties": {
             "type": {
               "type": "string",
-              "description": "Type of composition."
+              "description": "Property. Type of composition."
             },
             "id": {
               "type": "number",
-              "description": "Identifier for the composition."
+              "description": "Property. Identifier for the composition."
             },
             "name": {
               "type": "string",
-              "description": "Name of the composition."
+              "description": "Property. Name of the composition."
             },
             "nif": {
               "type": "string",
-              "description": "NIF associated with the composition."
+              "description": "Property. NIF associated with the composition."
             }
           }
         },
         "subs": {
           "type": "object",
-          "description": "Substance details of the subtype.",
+          "description": "Property. Substance details of the subtype.",
           "properties": {
             "type": {
               "type": "string",
-              "description": "Type of substance."
+              "description": "Property. Type of substance."
             },
             "id": {
               "type": "string",
-              "description": "Identifier for the substance."
+              "description": "Property. Identifier for the substance."
             },
             "name": {
               "type": "string",
-              "description": "Name of the substance."
+              "description": "Property. Name of the substance."
             }
           }
         },
         "prod": {
           "type": "object",
-          "description": "Production details of the subtype.",
+          "description": "Property. Production details of the subtype.",
           "properties": {
             "type": {
               "type": "string",
-              "description": "Type of product."
+              "description": "Property. Type of product."
             },
             "id": {
               "type": "number",
-              "description": "Identifier for the product."
+              "description": "Property. Identifier for the product."
             },
             "name": {
               "type": "string",
-              "description": "Name of the product."
+              "description": "Property. Name of the product."
             }
           }
         },
@@ -154,139 +157,139 @@
           "items": {
             "type": "string"
           },
-          "description": "Additional information related to the subtype."
+          "description": "Property. Additional information related to the subtype."
         }
       }
     },
     "dose": {
       "type": "string",
-      "description": "Recommended dose for the phytosanitary product."
+      "description": "Property. Recommended dose for the phytosanitary product."
     },
     "measure": {
       "type": "string",
-      "description": "Unit of measure for the dose."
+      "description": "Property. Unit of measure for the dose."
     },
     "efficacy": {
       "type": "object",
-      "description": "Efficacy details of the phytosanitary product.",
+      "description": "Property. Efficacy details of the phytosanitary product.",
       "properties": {
         "type": {
           "type": "string",
-          "description": "Type of efficacy."
+          "description": "Property. Type of efficacy."
         },
         "id": {
           "type": "string",
-          "description": "Identifier for the efficacy record."
+          "description": "Property. Identifier for the efficacy record."
         },
         "name": {
           "type": "string",
-          "description": "Name of the efficacy record."
+          "description": "Property. Name of the efficacy record."
         },
         "detail": {
           "type": "string",
-          "description": "Detailed information about the efficacy."
+          "description": "Property. Detailed information about the efficacy."
         }
       }
     },
     "typerisk": {
       "type": "string",
-      "description": "Type of risk associated with the phytosanitary product."
+      "description": "Property. Type of risk associated with the phytosanitary product."
     },
     "infection": {
       "type": "string",
-      "description": "Details about the infection the product is used against."
+      "description": "Property. Details about the infection the product is used against."
     },
     "detail": {
       "type": "string",
-      "description": "Additional details about the phytosanitary product."
+      "description": "Property. Additional details about the phytosanitary product."
     },
     "tj": {
       "type": "array",
       "items": {
         "type": "string"
       },
-      "description": "Additional codes or identifiers related to the product."
+      "description": "Property. Additional codes or identifiers related to the product."
     },
     "idtpismv": {
       "type": "array",
       "items": {
         "type": "string"
       },
-      "description": "Identifiers related to the product's type or classification."
+      "description": "Property. Identifiers related to the product's type or classification."
     },
     "distributed": {
       "type": "string",
-      "description": "Distribution details for the phytosanitary product."
+      "description": "Property. Distribution details for the phytosanitary product."
     },
     "batch": {
       "type": "string",
-      "description": "Batch number of the phytosanitary product."
+      "description": "Property. Batch number of the phytosanitary product."
     },
     "soup": {
       "type": "string",
-      "description": "Type or category of the phytosanitary product."
+      "description": "Property. Type or category of the phytosanitary product."
     },
     "dt": {
       "type": "string",
-      "description": "Date related to the product's distribution or usage."
+      "description": "Property. Date related to the product's distribution or usage."
     },
     "mdt": {
       "type": ["null", "string"],
-      "description": "Modification date, if applicable."
+      "description": "Property. Modification date, if applicable."
     },
     "st": {
       "type": "string",
-      "description": "Status of the phytosanitary product."
+      "description": "Property. Status of the phytosanitary product."
     },
     "mst": {
       "type": ["null", "string"],
-      "description": "Modification status, if applicable."
+      "description": "Property. Modification status, if applicable."
     },
     "preventive": {
       "type": "string",
-      "description": "Preventive measures associated with the product."
+      "description": "Property. Preventive measures associated with the product."
     },
     "pp": {
       "type": "string",
-      "description": "Pre-processing information related to the product."
+      "description": "Property. Pre-processing information related to the product."
     },
     "speed": {
       "type": "string",
-      "description": "Application speed for the phytosanitary product."
+      "description": "Property. Application speed for the phytosanitary product."
     },
     "recipe": {
       "type": "string",
-      "description": "Recipe or formulation details for the product."
+      "description": "Property. Recipe or formulation details for the product."
     },
     "surface": {
       "type": "string",
-      "description": "Surface area for application of the product."
+      "description": "Property. Surface area for application of the product."
     },
     "entrylimit": {
       "type": "string",
-      "description": "Entry limit or threshold for the product's application."
+      "description": "Property. Entry limit or threshold for the product's application."
     },
     "seclimit": {
       "type": "string",
-      "description": "Secondary limit or threshold for the product's application."
+      "description": "Property. Secondary limit or threshold for the product's application."
     },
     "machine": {
       "type": "array",
       "items": {
         "type": "string"
       },
-      "description": "Machines or equipment used for applying the product."
+      "description": "Property. Machines or equipment used for applying the product."
     },
     "idcp": {
       "type": "array",
       "items": {
         "type": "string"
       },
-      "description": "Identifiers for compliance or certification purposes."
+      "description": "Property. Identifiers for compliance or certification purposes."
     },
     "measur": {
       "type": ["null", "string"],
-      "description": "Measurement details, if applicable."
+      "description": "Property. Measurement details, if applicable."
     }
   },
   "required": ["id", "type", "dateCreated", "dateModified"]
