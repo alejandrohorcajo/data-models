@@ -387,7 +387,7 @@
       }
     },
     "mud": {
-      "type": "string",
+      "type": "number",
       "description": "Additional Property. MUD details."
     },
     "plan": {
