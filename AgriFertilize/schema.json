@@ -32,12 +32,12 @@
     },
     "enddate": {
       "type": "string",
-      "format": "date",
+      "format": ["date", "string"],
       "description": "Property. The end date of the fertilization process."
     },
     "inidate": {
       "type": "string",
-      "format": "date",
+      "format": ["date", "string"],
       "description": "Property. The start date of the fertilization process."
     },
     "measure": {
