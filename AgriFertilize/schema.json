@@ -47,7 +47,7 @@
           "description": "Property. Details of the measure."
         },
         "id": {
-          "type": "number",
+          "type": "string",
           "description": "Property. Identifier of the measure."
         },
         "name": {
@@ -337,7 +337,7 @@
       "description": "Property. MAF details.",
       "properties": {
         "id": {
-          "type": "number",
+          "type": "string",
           "description": "Property. Identifier of the MAF."
         },
         "name": {
@@ -359,7 +359,7 @@
           "description": "Property. Details of the msoup."
         },
         "id": {
-          "type": "number",
+          "type": "string",
           "description": "Property. Identifier of the msoup."
         },
         "name": {
@@ -405,7 +405,7 @@
       "description": "Property. TAF details.",
       "properties": {
         "id": {
-          "type": "number",
+          "type": "string",
           "description": "Property. Identifier of the TAF."
         },
         "name": {
@@ -430,7 +430,7 @@
       "description": "Property. TMI details.",
       "properties": {
         "id": {
-          "type": "number",
+          "type": "string",
           "description": "Property. Identifier of the TMI."
         },
         "name": {
