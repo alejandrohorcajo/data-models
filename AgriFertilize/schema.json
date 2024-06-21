@@ -66,11 +66,11 @@
         },
         "code": {
           "type": "string",
-          "description": "Property. Type of the msoup."
+          "description": "Property. Type of the measure."
         },
         "symbol": {
           "type": "string",
-          "description": "Property. Type of the msoup."
+          "description": "Property. Type of the measure."
         }
       }
     },
@@ -333,13 +333,24 @@
         "type": "object"
       },
       "description": "Additional Property.  Details of the machine."
-    },   
+    },
     "maf": {
-      "type": "array",
-      "items": {
-        "type": "object"
-      },
-      "description": "Additional Property.  MAF details."
+      "type": "object",
+      "description": "Property. MAF details.",
+      "properties": {
+        "id": {
+          "type": "number",
+          "description": "Property. Identifier of the MAF."
+        },
+        "name": {
+          "type": "string",
+          "description": "Property. Name of the MAF."
+        },
+        "type": {
+          "type": "string",
+          "description": "Property. Type of the MAF."
+        }
+      }
     },    
     "msoup": {
       "type": "object",
@@ -392,8 +403,22 @@
       "description": "Additional Property. SOUP details."
     },
     "taf": {
-      "type": "string",
-      "description": "Additional Property. TAF details."
+      "type": "object",
+      "description": "Property. TAF details.",
+      "properties": {
+        "id": {
+          "type": "number",
+          "description": "Property. Identifier of the TAF."
+        },
+        "name": {
+          "type": "string",
+          "description": "Property. Name of the TAF."
+        },
+        "type": {
+          "type": "string",
+          "description": "Property. Type of the TAF."
+        }
+      }
     },
     "tgp": {
       "type": "array",
@@ -401,13 +426,24 @@
         "type": "object"
       },
       "description": "Additional Property.  TGP details."
-    },   
+    },
     "tmi": {
-      "type": "array",
-      "items": {
-        "type": "object"
-      },
-      "description": "Additional Property.  TMI details."
+      "type": "object",
+      "description": "Property. TMI details.",
+      "properties": {
+        "id": {
+          "type": "number",
+          "description": "Property. Identifier of the TMI."
+        },
+        "name": {
+          "type": "string",
+          "description": "Property. Name of the TMI."
+        },
+        "type": {
+          "type": "string",
+          "description": "Property. Type of the TMI."
+        }
+      }
     }
   },
   "required": ["id", "type"]
