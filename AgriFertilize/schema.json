@@ -317,12 +317,12 @@
       "description": "Additional Property. Identifier for CP."
     },
     "machine": {
-          "type": "array",
-          "items": {
-            "type": "object"
-          },
-          "description": "Additional Property.  Details of the machine."
-        },  
+      "type": "array",
+      "items": {
+        "type": "object"
+      },
+      "description": "Additional Property.  Details of the machine."
+    },  
     "maf": {
       "type": "string",
       "description": "Additional Property. MAF details."
@@ -352,19 +352,19 @@
       "description": "Additional Property. TAF details."
     },
     "tgp": {
-          "type": "array",
-          "items": {
-            "type": "object"
-          },
-          "description": "Additional Property.  TGP details."
-        },   
-        "tmi": {
-          "type": "array",
-          "items": {
-            "type": "object"
-          },
-          "description": "Additional Property.  TMI details."
-        }
+      "type": "array",
+      "items": {
+        "type": "object"
+      },
+      "description": "Additional Property.  TGP details."
+    },   
+    "tmi": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      },
+      "description": "Additional Property.  TMI details."
+    }
   },
   "required": ["id", "type"]
 }
