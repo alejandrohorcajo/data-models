@@ -399,7 +399,7 @@
       "description": "Additional Property. R10 details."
     },
     "soup": {
-      "type": "string",
+      "type": "number",
       "description": "Additional Property. SOUP details."
     },
     "taf": {
