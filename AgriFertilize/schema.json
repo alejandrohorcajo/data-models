@@ -63,6 +63,14 @@
         "type": {
           "type": "string",
           "description": "Property. Type of the measure."
+        },
+        "code": {
+          "type": "string",
+          "description": "Property. Type of the msoup."
+        },
+        "symbol": {
+          "type": "string",
+          "description": "Property. Type of the msoup."
         }
       }
     },
@@ -332,10 +340,40 @@
         "type": "object"
       },
       "description": "Additional Property.  MAF details."
-    },
+    },    
     "msoup": {
-      "type": "string",
-      "description": "Additional Property. MSOUP details."
+      "type": "object",
+      "description": "Property.  MSOUP details.",
+      "properties": {
+        "detail": {
+          "type": "string",
+          "description": "Property. Details of the msoup."
+        },
+        "id": {
+          "type": "number",
+          "description": "Property. Identifier of the msoup."
+        },
+        "name": {
+          "type": "string",
+          "description": "Property. Name of the msoup."
+        },
+        "prior": {
+          "type": "string",
+          "description": "Property. Prior details of the msoup."
+        },
+        "type": {
+          "type": "string",
+          "description": "Property. Type of the msoup."
+        },
+        "code": {
+          "type": "string",
+          "description": "Property. Type of the msoup."
+        },
+        "symbol": {
+          "type": "string",
+          "description": "Property. Type of the msoup."
+        }
+      }
     },
     "mud": {
       "type": "string",
