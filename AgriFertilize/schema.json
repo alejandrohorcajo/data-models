@@ -391,7 +391,7 @@
       "description": "Additional Property. MUD details."
     },
     "plan": {
-      "type": "object",
+      "type": ["null", "string"],
       "description": "Additional Property. Plan details."
     },
     "r10": {
