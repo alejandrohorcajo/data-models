@@ -63,7 +63,7 @@
           "description": "Property. Type of the measure."
         },
         "code": {
-          "type": "string",
+          "type": "number",
           "description": "Property. Type of the measure."
         },
         "symbol": {
@@ -375,7 +375,7 @@
           "description": "Property. Type of the msoup."
         },
         "code": {
-          "type": "string",
+          "type": "number",
           "description": "Property. Type of the msoup."
         },
         "symbol": {
