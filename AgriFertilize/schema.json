@@ -311,10 +311,13 @@
     "detail": {
       "type": "string",
       "description": "Additional Property. Additional details."
-    },
+    },   
     "idcp": {
-      "type": "string",
-      "description": "Additional Property. Identifier for CP."
+      "type": "array",
+      "items": {
+        "type": "object"
+      },
+      "description": "Additional Property.  IDCP details."
     },
     "machine": {
       "type": "array",
