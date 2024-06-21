@@ -305,11 +305,11 @@
       "description": "Property. Type of soil associated with the AgriFertilize entity."
     },
     "bill": {
-      "type": "object",
+      "type": "string",
       "description": "Additional Property. Details of the bill."
     },
     "detail": {
-      "type": "object",
+      "type": "string",
       "description": "Additional Property. Additional details."
     },
     "idcp": {
