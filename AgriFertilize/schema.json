@@ -5,6 +5,9 @@
   "title": "AgriFertilize Schema",
   "description": "Schema for AgriFertilize entity.",
   "type": "object",
+  "derivedFrom": "",
+  "license": "",
+  "modelTags": "",
   "additionalProperties": false,
   "properties": {
     "id": {
