@@ -334,7 +334,7 @@
     },
     "maf": {
       "type": "object",
-      "description": "Property. MAF details.",
+      "description": "Additional Property. Details of the MAF.",
       "properties": {
         "id": {
           "type": "string",
@@ -352,7 +352,7 @@
     },    
     "msoup": {
       "type": "object",
-      "description": "Property.  MSOUP details.",
+      "description": "Additional Property. Details of the MSOUP.",
       "properties": {
         "detail": {
           "type": "string",
@@ -402,7 +402,7 @@
     },
     "taf": {
       "type": "object",
-      "description": "Property. TAF details.",
+      "description": "Additional Property. Details of the TAF.",
       "properties": {
         "id": {
           "type": "string",
@@ -427,7 +427,7 @@
     },
     "tmi": {
       "type": "object",
-      "description": "Property. TMI details.",
+      "description": "Additional Property. Details of the TMI.",
       "properties": {
         "id": {
           "type": "string",
