@@ -3,7 +3,7 @@
   "$schemaVersion": "0.0.1",
   "$id": "https://example.com/schema/AgriPhytosanitary",
   "title": "AgriPhytosanitary Schema",
-  "description": "Schema for AgriPhytosanitary entity.",
+  "description": "Schema for AgriPhytosanitary entity. Phytosanitary means relating to the health of plants.",
   "type": "object",
   "derivedFrom": "",
   "license": "https://opensource.org/licenses/MIT",
