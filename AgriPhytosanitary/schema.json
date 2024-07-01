@@ -6,8 +6,8 @@
   "description": "Schema for AgriPhytosanitary entity.",
   "type": "object",
   "derivedFrom": "",
-  "license": "",
-  "modelTags": "",
+  "license": "https://opensource.org/licenses/MIT",
+  "modelTags": "Agrifood, AgriPhytosanitary",
   "properties": {
     "id": {
       "type": "string",
