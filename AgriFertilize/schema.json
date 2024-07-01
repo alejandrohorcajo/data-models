@@ -6,8 +6,8 @@
   "description": "Schema for AgriFertilize entity.",
   "type": "object",
   "derivedFrom": "",
-  "license": "",
-  "modelTags": "",
+  "license": "https://opensource.org/licenses/MIT",
+  "modelTags": "Agrifood, AgriFertilize",
   "additionalProperties": false,
   "properties": {
     "id": {
