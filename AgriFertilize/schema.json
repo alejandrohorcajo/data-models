@@ -8,7 +8,6 @@
   "derivedFrom": "",
   "license": "https://opensource.org/licenses/MIT",
   "modelTags": "Agrifood, AgriFertilize",
-  "additionalProperties": false,
   "properties": {
     "id": {
       "type": "string",
