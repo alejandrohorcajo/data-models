@@ -314,29 +314,29 @@
     },
     "bill": {
       "type": "string",
-      "description": "Additional Property. Details of the bill."
+      "description": "Property. Details of the bill."
     },
     "detail": {
       "type": "string",
-      "description": "Additional Property. Additional details."
+      "description": "Property. Additional details."
     },   
     "idcp": {
       "type": "array",
       "items": {
         "type": "object"
       },
-      "description": "Additional Property.  IDCP details."
+      "description": "Property.  IDCP details."
     },
     "machine": {
       "type": "array",
       "items": {
         "type": "object"
       },
-      "description": "Additional Property.  Details of the machine."
+      "description": "Property.  Details of the machine."
     },
     "maf": {
       "type": "object",
-      "description": "Additional Property. Details of the MAF.",
+      "description": "Property. Details of the MAF.",
       "properties": {
         "id": {
           "type": "string",
@@ -354,7 +354,7 @@
     },    
     "msoup": {
       "type": "object",
-      "description": "Additional Property. Details of the MSOUP.",
+      "description": "Property. Details of the MSOUP.",
       "properties": {
         "detail": {
           "type": "string",
@@ -388,23 +388,23 @@
     },
     "mud": {
       "type": "number",
-      "description": "Additional Property. MUD details."
+      "description": "Property. MUD details."
     },
     "plan": {
       "type": ["null", "string"],
-      "description": "Additional Property. Plan details."
+      "description": "Property. Plan details."
     },
     "r10": {
       "type": "string",
-      "description": "Additional Property. R10 details."
+      "description": "Property. R10 details."
     },
     "soup": {
       "type": "number",
-      "description": "Additional Property. SOUP details."
+      "description": "Property. SOUP details."
     },
     "taf": {
       "type": "object",
-      "description": "Additional Property. Details of the TAF.",
+      "description": "Property. Details of the TAF.",
       "properties": {
         "id": {
           "type": "string",
@@ -425,11 +425,11 @@
       "items": {
         "type": "object"
       },
-      "description": "Additional Property.  TGP details."
+      "description": "Property.  TGP details."
     },
     "tmi": {
       "type": "object",
-      "description": "Additional Property. Details of the TMI.",
+      "description": "Property. Details of the TMI.",
       "properties": {
         "id": {
           "type": "string",
