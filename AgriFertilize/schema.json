@@ -30,11 +30,11 @@
     },
     "dose": {
       "type": "number",
-      "description": "Property. The dose of fertilizer applied."
+      "description": "Property. Fertilizer dose administered."
     },
     "enddate": {
       "type": "string",
-      "description": "Property. The end date of the fertilization process."
+      "description": "Property. Final date of fertilizer process. This field can be empty."
     },
     "inidate": {
       "type": "string",
@@ -46,7 +46,7 @@
       "properties": {
         "detail": {
           "type": "string",
-          "description": "Property. Details of the measure."
+          "description": "Property. Notes about the measurement."
         },
         "id": {
           "type": "string",
@@ -54,11 +54,11 @@
         },
         "name": {
           "type": "string",
-          "description": "Property. Name of the measure."
+          "description": "Property. Name assigned to the measure."
         },
         "prior": {
           "type": "string",
-          "description": "Property. Prior details of the measure."
+          "description": "Property. Level of importance of the measure. Available values ​​are between 0 (priority) and 10 (least priority)."
         },
         "type": {
           "type": "string",
@@ -66,11 +66,11 @@
         },
         "code": {
           "type": "number",
-          "description": "Property. Type of the measure."
+          "description": "Property. Ministry code assigned to the measure."
         },
         "symbol": {
           "type": "string",
-          "description": "Property. Type of the measure."
+          "description": "Property. Symbol assigned to the measure."
         }
       }
     },
@@ -94,7 +94,7 @@
           "items": {
             "type": "object"
           },
-          "description": "Property. Array of accm objects associated with the subtype."
+          "description": "Property. Information about fertilizer type acids."
         },
         "check": {
           "type": "number",
@@ -131,7 +131,7 @@
           "items": {
             "type": "object"
           },
-          "description": "Property. Array of hecm objects associated with the subtype."
+          "description": "Property. Information on heavy metals of the fertilizer type."
         },
         "id": {
           "type": "number",
@@ -142,7 +142,7 @@
           "items": {
             "type": "object"
           },
-          "description": "Property. Array of macm objects associated with the subtype."
+          "description": "Property. Information on other macronutrients of the fertilizer type."
         },
         "manure": {
           "type": ["null", "string"],
@@ -150,7 +150,7 @@
         },
         "matdet": {
           "type": ["null", "string"],
-          "description": "Property. Material details, if any."
+          "description": "Property. Material fertilize detail, if any."
         },
         "material": {
           "type": "object",
@@ -314,25 +314,25 @@
     },
     "bill": {
       "type": "string",
-      "description": "Property. Details of the bill."
+      "description": "Property. Invoice or delivery note number."
     },
     "detail": {
       "type": "string",
-      "description": "Property. Additional details."
+      "description": "Property. User notes on administered fertilizer."
     },   
     "idcp": {
       "type": "array",
       "items": {
         "type": "object"
       },
-      "description": "Property.  IDCP details."
+      "description": "Property.  IDs of the CropSigpac on which the fertilizer is applied in the campaign."
     },
     "machine": {
       "type": "array",
       "items": {
         "type": "object"
       },
-      "description": "Property.  Details of the machine."
+      "description": "Property.  Information on the machinery assigned to the application of the fertilizer as well as information on its hygiene."
     },
     "maf": {
       "type": "object",
@@ -388,7 +388,7 @@
     },
     "mud": {
       "type": "number",
-      "description": "Property. MUD details."
+      "description": "Property. Indicates whether sewage sludge application document has been used or not."
     },
     "plan": {
       "type": ["null", "string"],
@@ -396,11 +396,11 @@
     },
     "r10": {
       "type": "string",
-      "description": "Property. R10 details."
+      "description": "Property. Waste authorization number R10."
     },
     "soup": {
       "type": "number",
-      "description": "Property. SOUP details."
+      "description": "Property. Final soup amount administered."
     },
     "taf": {
       "type": "object",
@@ -425,7 +425,7 @@
       "items": {
         "type": "object"
       },
-      "description": "Property.  TGP details."
+      "description": "Property.  Information on good practices of fertilizer applied in the campaign."
     },
     "tmi": {
       "type": "object",
