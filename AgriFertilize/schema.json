@@ -323,7 +323,7 @@
     "idcp": {
       "type": "array",
       "items": {
-        "type": "object"
+        "type": "string"
       },
       "description": "Property.  IDs of the CropSigpac on which the fertilizer is applied in the campaign."
     },
