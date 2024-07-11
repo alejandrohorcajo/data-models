@@ -392,7 +392,7 @@
     },
     "plan": {
       "type": ["null", "string"],
-      "description": "Property. Plan details."
+      "description": "Property. Information about the subscriber plans that are part of the campaign."
     },
     "r10": {
       "type": "string",
