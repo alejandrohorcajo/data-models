@@ -425,7 +425,7 @@
             "type": "TAF",
             "id": {
                 "type": "Property",
-                "value": 1
+                "value": "1"
             },
             "name": {
                 "type": "Property",
