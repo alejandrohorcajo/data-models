@@ -439,7 +439,7 @@
             "type": "MAF",
             "id": {
                 "type": "Property",
-                "value": 1
+                "value": "1"
             },
             "name": {
                 "type": "Property",
@@ -453,7 +453,7 @@
             "type": "TMI",
             "id": {
                 "type": "Property",
-                "value": 1
+                "value": "1"
             },
             "name": {
                 "type": "Property",
