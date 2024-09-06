@@ -345,8 +345,8 @@
                 "value": "kg/ha"
             },
             "prior": {
-                "type": "Number",
-                "value": 1
+                "type": "Text",
+                "value": "1"
             },
             "detail": {
                 "type": "Text",
