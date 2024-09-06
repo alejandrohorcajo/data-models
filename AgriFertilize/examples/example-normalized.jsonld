@@ -347,7 +347,7 @@
             },
             "prior": {
                 "type": "Property",
-                "value": 1
+                "value": "1"
             },
             "detail": {
                 "type": "Property",
