@@ -393,8 +393,8 @@
                 "value": "l"
             },
             "prior": {
-                "type": "Number",
-                "value": 3
+                "type": "Text",
+                "value": "3"
             },
             "detail": {
                 "type": "Text",
