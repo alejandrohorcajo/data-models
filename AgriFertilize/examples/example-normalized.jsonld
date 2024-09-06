@@ -589,5 +589,8 @@
                 "value": 39
             }
         ]
-    }
+    },
+    "@context": [
+        "https://smartdatamodels.org/context.jsonld"
+    ]
 }
