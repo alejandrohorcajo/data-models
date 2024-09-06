@@ -315,8 +315,8 @@
         "value": {
             "type": "Measure",
             "id": {
-                "type": "Number",
-                "value": 501
+                "type": "Text",
+                "value": "501"
             },
             "subtype": {
                 "type": "StructuredValue",
@@ -363,8 +363,8 @@
         "value": {
             "type": "Measure",
             "id": {
-                "type": "Number",
-                "value": 514
+                "type": "Text",
+                "value": "514"
             },
             "subtype": {
                 "type": "StructuredValue",
