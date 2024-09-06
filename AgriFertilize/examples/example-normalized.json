@@ -437,8 +437,8 @@
         "value": {
             "type": "MAF",
             "id": {
-                "type": "Number",
-                "value": 1
+                "type": "Text",
+                "value": "1"
             },
             "name": {
                 "type": "Text",
@@ -451,8 +451,8 @@
         "value": {
             "type": "TMI",
             "id": {
-                "type": "Number",
-                "value": 1
+                "type": "Text",
+                "value": "1"
             },
             "name": {
                 "type": "Text",
